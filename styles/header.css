@@ -1,0 +1,199 @@
+.header {
+	width: 100%;
+	height: 100px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	z-index: 99999;
+}
+.header--image {
+	height: 80px;
+}
+.header--navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.header--navigation--li {
+	border: none;
+	background: none;
+	padding: 20px 24px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s linear ease-in-out;
+}
+.header--navigation--li:hover {
+	transition: all 0.3s linear ease-in-out;
+	background: rgba(167, 193, 246, 0.19);
+}
+
+.header--navigation--li--text {
+	letter-spacing: 3px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.hover-underline-animation {
+	position: relative;
+	color: black;
+	padding-bottom: 10px;
+}
+
+.hover-underline-animation:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.header--navigation--li:hover .hover-underline-animation:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+/* MOBILE HEADER */
+.header--mobile {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px 0px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+.header--mobile--nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	background: white;
+}
+.header--mobile--nav--image {
+	height: 80px;
+}
+.header--mobile--nav--ul {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px 0px;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	padding-top: 30px;
+	background: white;
+	z-index: 99999;
+}
+
+/* OPEN CLOSE MENU HAMB */
+.header--mobile--nav--close {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	right: 0;
+	transition-duration: 0.5s;
+}
+.header--mobile--nav--close .header--mobile--nav--close--left {
+	transition-duration: 0.5s;
+	position: absolute;
+	height: 4px;
+	width: 15px;
+	top: 30px;
+	background-color: #212121;
+}
+.header--mobile--nav--close .header--mobile--nav--close--left:before {
+	transition-duration: 0.5s;
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	background-color: #212121;
+	content: "";
+	top: -10px;
+}
+.header--mobile--nav--close .header--mobile--nav--close--left:after {
+	transition-duration: 0.5s;
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	background-color: #212121;
+	content: "";
+	top: 10px;
+}
+.header--mobile--nav--close .header--mobile--nav--close--left:hover {
+	cursor: pointer;
+}
+.header--mobile--nav--close .header--mobile--nav--close--right {
+	transition-duration: 0.5s;
+	position: absolute;
+	height: 4px;
+	width: 15px;
+	top: 30px;
+	background-color: #212121;
+	left: 15px;
+}
+.header--mobile--nav--close .header--mobile--nav--close--right:before {
+	transition-duration: 0.5s;
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	background-color: #212121;
+	content: "";
+	top: -10px;
+}
+.header--mobile--nav--close .header--mobile--nav--close--right:after {
+	transition-duration: 0.5s;
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	background-color: #212121;
+	content: "";
+	top: 10px;
+}
+.header--mobile--nav--close.open .header--mobile--nav--close--left {
+	transition-duration: 0.5s;
+	background: transparent;
+}
+.header--mobile--nav--close.open .header--mobile--nav--close--left:before {
+	transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px);
+}
+.header--mobile--nav--close.open .header--mobile--nav--close--left:after {
+	transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+.header--mobile--nav--close.open .header--mobile--nav--close--right {
+	transition-duration: 0.5s;
+	background: transparent;
+}
+.header--mobile--nav--close.open .header--mobile--nav--close--right:before {
+	transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px);
+}
+.header--mobile--nav--close.open .header--mobile--nav--close--right:after {
+	transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+.header--mobile--nav--close:hover {
+	cursor: pointer;
+}

@@ -1,16 +1,11 @@
-const title = document.querySelector("#titulo");
+import { observersElements } from "./scripts/oberservers.js";
 
-const callMe = (entries) => {
-	let entry = entries[0];
-	if (entry.isIntersecting) {
-		title.classList.add("active");
-	} else {
-		title.classList.remove("active");
-	}
-};
+observersElements();
 
-let options = {};
+const buttonMenu = document.querySelector(".header--mobile--nav--close");
+const menuMobile = document.querySelector("#header--mobile--nav--ul");
 
-let observer = new IntersectionObserver(callMe, options);
-
-observer.observe(title);
+buttonMenu.addEventListener("click", () => {
+	buttonMenu.classList.toggle("open");
+	menuMobile.classList.toggle("active");
+});

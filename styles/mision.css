@@ -1,0 +1,30 @@
+.app--mision {
+	width: 100%;
+	padding: 0px 20px;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background: rgb(37, 14, 126);
+	margin-top: 50px;
+}
+
+.app--mision--title {
+	z-index: 3;
+	position: relative;
+	color: white;
+	font-size: 4rem;
+	text-align: start;
+}
+.app--mision--title--bg {
+	background: #6169d9;
+	padding: 60px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+	top: -15px;
+	left: 0px;
+}
+.app--mision--title--span {
+}

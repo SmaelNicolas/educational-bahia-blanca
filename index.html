@@ -8,63 +8,104 @@
 	</head>
 	<body>
 		<div id="home" class="app--container">
+			<!-- DESKTOP -->
 			<header class="header">
-				<img
-					class="header--image"
-					src="./img/descarga.jpg"
-					alt="logo" />
+				<img class="header--image" src="./img/logo.jpg" alt="gea" />
 				<nav class="header--navigation">
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#home"
-							>Home</a
-						>
-					</li>
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#aboutUs"
-							>Sobre Nosotros</a
-						>
-					</li>
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#services"
-							>Servicios</a
-						>
-					</li>
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#contact"
-							>Contacto</a
-						>
-					</li>
+					<a class="header--navigation--li" href="#us">
+						<span
+							class="hover-underline-animation header--navigation--li--text">
+							Nosotros
+						</span>
+					</a>
+					<a class="header--navigation--li" href="#services">
+						<span
+							class="hover-underline-animation header--navigation--li--text">
+							Servicios
+						</span>
+					</a>
+					<a class="header--navigation--li" href="#contact">
+						<span
+							class="hover-underline-animation header--navigation--li--text">
+							Contacto
+						</span>
+					</a>
 				</nav>
 			</header>
+
+			<!-- RESPONSIVE -->
 			<header class="header--mobile">
-				<div class="header--mobile--close">X</div>
-				<img
-					class="header--mobile--image"
-					src="./img/descarga.jpg"
-					alt="logo" />
 				<nav class="header--mobile--nav">
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#home"
-							>Home</a
-						>
-					</li>
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#aboutUs"
-							>Sobre Nosotros</a
-						>
-					</li>
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#services"
-							>Servicios</a
-						>
-					</li>
-					<li class="header--navigation--li">
-						<a class="header--navigation--li--a" href="#contact"
-							>Contacto</a
-						>
-					</li>
+					<img
+						class="header--mobile--nav--image"
+						src="./img/logo.jpg"
+						alt="logo" />
+					<div class="header--mobile--nav--close" data-menu="11">
+						<div class="header--mobile--nav--close--left"></div>
+						<div class="header--mobile--nav--close--right"></div>
+					</div>
+					<ul
+						id="header--mobile--nav--ul"
+						class="header--mobile--nav--ul">
+						<a class="header--navigation--li" href="#us">
+							<span
+								class="hover-underline-animation header--navigation--li--text">
+								Nosotros
+							</span>
+						</a>
+						<a class="header--navigation--li" href="#services">
+							<span
+								class="hover-underline-animation header--navigation--li--text">
+								Servicios
+							</span>
+						</a>
+						<a class="header--navigation--li" href="#contact">
+							<span
+								class="hover-underline-animation header--navigation--li--text">
+								Contacto
+							</span>
+						</a>
+					</ul>
 				</nav>
 			</header>
+
+			<!-- HERO -->
+			<section class="hero--section">
+				<div class="hero--section--info">
+					<h1 class="hero--section--info--title">G.E.A</h1>
+					<p class="hero--section--info--text">
+						Somos una empresa dedicada a la
+						<span class="hero--section--info--text--span">
+							formación profesional
+						</span>
+						del docente. Nuestra misión es mejorar la vida de
+						nuestros clientes ofreciendo soluciones efectivas y
+						otorgando
+						<span class="hero--section--info--text--span">
+							herramientas pedagógicas
+						</span>
+						acercando nuestras educativas de manera online con la
+						presencia y acompañamiento de nuestros tutores
+					</p>
+					<div class="hero--section--info--action">
+						<a class="hero--section--info--action--link" href="#"
+							>Cursos</a
+						>
+					</div>
+				</div>
+				<img class="hero--section--image" src="./img/hero.png" />
+			</section>
+			<!-- END HERO -->
+
+			<!-- MISION -->
+			<section class="app--mision">
+				<h2 class="app--mision--title">
+					<div class="app--mision--title--bg"></div>
+					<span class="app--mision--title--span">M</span>isión
+				</h2>
+				<p class="app--mision--text"></p>
+			</section>
+			<!-- END MISION -->
 
 			<section class="app--section"></section>
 			<section class="app--section">
@@ -73,6 +114,6 @@
 			<section class="app--section"></section>
 		</div>
 
-		<script src="script.js"></script>
+		<script src="script.js" type="module"></script>
 	</body>
 </html>

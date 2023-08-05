@@ -10,6 +10,7 @@ xxl: 1400px;
 @import url("./styles/header.css");
 @import url("./styles/hero.css");
 @import url("./styles/mision.css");
+@import url("./styles/services.css");
 @import url("./styles/responsive.css");
 
 * {
@@ -39,4 +40,8 @@ xxl: 1400px;
 
 .active {
 	display: flex;
+}
+
+.lazy {
+	opacity: 0;
 }

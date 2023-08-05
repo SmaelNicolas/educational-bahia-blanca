@@ -1,23 +1,24 @@
-.app--mision {
+.mision--section {
 	width: 100%;
 	padding: 0px 20px;
-	height: 50vh;
+	min-height: 50vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
 	background: rgb(37, 14, 126);
 	margin-top: 50px;
+	padding-bottom: 50px;
 }
 
-.app--mision--title {
+.mision--section--title {
 	z-index: 3;
 	position: relative;
 	color: white;
 	font-size: 4rem;
 	text-align: start;
 }
-.app--mision--title--bg {
+.mision--section--title--bg {
 	background: #6169d9;
 	padding: 60px;
 	border-radius: 50%;
@@ -26,5 +27,13 @@
 	top: -15px;
 	left: 0px;
 }
-.app--mision--title--span {
+.mision--section--title--span {
+}
+.mision--section--text {
+	max-width: 900px;
+	text-align: start;
+	line-height: 30px;
+	margin-top: 40px;
+	font-size: 16px;
+	color: white;
 }

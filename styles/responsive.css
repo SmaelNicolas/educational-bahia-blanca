@@ -31,4 +31,22 @@
 		margin-top: 70px;
 		width: calc(300px + 4vw);
 	}
+
+	/* SERVICES SECTION */
+	.services--section--container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 20px;
+		align-items: center;
+		justify-items: center;
+		margin-inline: auto;
+	}
+}
+
+@media (min-width: 1300px) {
+	/* SERVICES SECTION */
+	.services--section--container {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }

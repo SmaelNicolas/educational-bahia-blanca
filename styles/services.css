@@ -67,3 +67,21 @@
 }
 .services--section--card--button {
 }
+
+@media (min-width: 768px) {
+	.services--section--container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 20px;
+		align-items: center;
+		justify-items: center;
+		margin-inline: auto;
+	}
+}
+
+@media (min-width: 1300px) {
+	.services--section--container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

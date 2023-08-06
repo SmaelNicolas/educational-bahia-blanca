@@ -11,7 +11,7 @@ xxl: 1400px;
 @import url("./styles/hero.css");
 @import url("./styles/mision.css");
 @import url("./styles/services.css");
-@import url("./styles/responsive.css");
+@import url("./styles/footer.css");
 
 * {
 	padding: 0;

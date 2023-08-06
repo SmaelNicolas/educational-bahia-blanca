@@ -197,3 +197,39 @@
 .header--mobile--nav--close:hover {
 	cursor: pointer;
 }
+
+@media (max-width: 767px) {
+	.header {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.header--mobile {
+		display: none;
+	}
+	.hero--section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 0px 10rem;
+		padding-top: 10%;
+	}
+	.hero--section--info {
+		max-width: 650px;
+		padding: 20px;
+	}
+	.hero--section--info--title {
+		font-size: 8rem;
+		padding: 10px 0px;
+	}
+	.hero--section--info--text {
+		max-width: 600px;
+		font-size: 1rem;
+	}
+	.hero--section--image {
+		margin-top: 70px;
+		width: calc(300px + 4vw);
+	}
+}

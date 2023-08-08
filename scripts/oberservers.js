@@ -1,7 +1,7 @@
 const options = {
 	root: null,
 	threshold: 1,
-	rootMargin: "0px 0px -60px 0px",
+	rootMargin: "0px 0px 0px 0px",
 };
 export const observersElements = () => {
 	const title = document.querySelector("#titulo");

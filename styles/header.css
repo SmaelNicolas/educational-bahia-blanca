@@ -92,7 +92,8 @@
 	padding-bottom: 10px;
 }
 .header--mobile--nav--image {
-	height: 80px;
+	margin: 5px 0px 0px 5px;
+	height: 70px;
 }
 .header--mobile--nav--ul {
 	width: 100%;

@@ -22,24 +22,24 @@ export const observersElements = () => {
 		observerImages.observe(image);
 	});
 
-	const logoImages = document.querySelector("#logo");
-	const logoHeader = document.querySelector(".header--image");
-	const logoHeaderMobile = document.querySelector(
-		".header--mobile--nav--image"
-	);
+	// const logoImages = document.querySelector("#logo");
+	// const logoHeader = document.querySelector(".header--image");
+	// const logoHeaderMobile = document.querySelector(
+	// 	".header--mobile--nav--image"
+	// );
 
-	const changePosition = (entries, obs) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				logoHeader.classList.add("lazyLogo");
-				logoHeaderMobile.classList.add("lazyLogo");
-			} else {
-				logoHeader.classList.remove("lazyLogo");
-				logoHeaderMobile.classList.remove("lazyLogo");
-			}
-		});
-	};
+	// const changePosition = (entries, obs) => {
+	// 	entries.forEach((entry) => {
+	// 		if (entry.isIntersecting) {
+	// 			logoHeader.classList.add("lazyLogo");
+	// 			logoHeaderMobile.classList.add("lazyLogo");
+	// 		} else {
+	// 			logoHeader.classList.remove("lazyLogo");
+	// 			logoHeaderMobile.classList.remove("lazyLogo");
+	// 		}
+	// 	});
+	// };
 
-	let oberverLogo = new IntersectionObserver(changePosition, options);
-	oberverLogo.observe(logoImages);
+	// let oberverLogo = new IntersectionObserver(changePosition, options);
+	// oberverLogo.observe(logoImages);
 };

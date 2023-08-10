@@ -24,7 +24,7 @@
 .services--section--subtitle {
 	z-index: 3;
 	position: relative;
-	color: rgb(37, 14, 126);
+	color: #250e7e;
 	border-bottom: 3px solid #ff7a6b;
 	font-size: 25px;
 	text-align: start;
@@ -55,9 +55,17 @@
 		rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
 		rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 	background-image: url("../img/gea/1.jpeg");
-	background-size: cover;
+	background-size: contain;
 	background-position: top;
 	background-repeat: repeat-y;
+}
+.services--section--card--title {
+	font-size: 12px;
+	width: 100%;
+	text-align: start;
+	padding-bottom: 5px;
+	font-weight: 500;
+	color: #250e7e;
 }
 .services--section--card--special {
 	width: 300px;
@@ -93,6 +101,9 @@
 	}
 	.services--section--card {
 		width: 450px;
+	}
+	.services--section--card--title {
+		font-size: 14px;
 	}
 	.services--section--card--special {
 		width: 450px;

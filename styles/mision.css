@@ -1,22 +1,26 @@
 .mision--section {
 	width: 100%;
 	padding: 0px 20px;
-	min-height: 50vh;
+	min-height: 70vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	background: rgb(37, 14, 126);
+	background: #250e7e;
 	margin-top: 50px;
 	padding-bottom: 50px;
+	border-bottom-left-radius: 50% 21%;
+	border-bottom-right-radius: 50% 21%;
+	position: relative;
+	margin: 50px 0px 100px 0px;
 }
-
 .mision--section--title {
 	z-index: 3;
 	position: relative;
 	color: white;
 	font-size: 4rem;
 	text-align: start;
+	font-weight: 500;
 }
 .mision--section--title--bg {
 	background: #6169d9;
@@ -27,8 +31,6 @@
 	top: -15px;
 	left: 0px;
 }
-.mision--section--title--span {
-}
 .mision--section--text {
 	max-width: 900px;
 	text-align: start;
@@ -36,4 +38,37 @@
 	margin-top: 40px;
 	font-size: 16px;
 	color: white;
+}
+.mision--section--text--span {
+	background: #ff7a6b;
+	transition: background 1s ease-in-out;
+	padding: 5px 4px;
+	margin: 2px;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+}
+.mision--section--text--link {
+	color: #ff7a6b;
+	transition: color 0.3s ease-in-out;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 16px;
+}
+.mision--section--text--link:hover {
+	color: white;
+	transition: color 0.3s ease-in-out;
+}
+.mision--section--image {
+	width: 100%;
+	max-width: 350px;
+	align-self: center;
+}
+
+@media (min-width: 900px) {
+	.mision--section {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }

@@ -4,13 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div id="home" class="app--container">
 			<!-- DESKTOP -->
 			<header class="header">
-				<img class="header--image" src="./img/gea/logo.jpg" alt="gea" />
+				<img
+					class="header--image lazyLogo"
+					src="./img/gea/logo.jpg"
+					alt="gea" />
 				<nav class="header--navigation">
 					<a class="header--navigation--li" href="#us">
 						<span
@@ -21,7 +27,7 @@
 					<a class="header--navigation--li" href="#services">
 						<span
 							class="hover-underline-animation header--navigation--li--text">
-							Servicios
+							Capacitaciones
 						</span>
 					</a>
 					<a class="header--navigation--li" href="#contact">
@@ -37,7 +43,7 @@
 			<header class="header--mobile">
 				<nav class="header--mobile--nav">
 					<img
-						class="header--mobile--nav--image"
+						class="header--mobile--nav--image lazyLogo"
 						src="./img/gea/logo.jpg"
 						alt="logo" />
 					<div class="header--mobile--nav--close" data-menu="11">
@@ -56,7 +62,7 @@
 						<a class="header--navigation--li" href="#services">
 							<span
 								class="hover-underline-animation header--navigation--li--text">
-								Servicios
+								Capacitaciones
 							</span>
 						</a>
 						<a class="header--navigation--li" href="#contact">
@@ -72,7 +78,13 @@
 			<!-- HERO -->
 			<section class="hero--section">
 				<div class="hero--section--info">
-					<h2 class="hero--section--info--title">G.E.A</h2>
+					<!-- <h2 class="hero--section--info--title">G.E.A</h2> -->
+					<img
+						id="logo"
+						class="hero--section--logo"
+						src="./img/gea/logo.jpg"
+						alt="gea" />
+
 					<p class="hero--section--info--text">
 						Somos una empresa dedicada a la
 						<span class="hero--section--info--text--span">
@@ -87,6 +99,7 @@
 						acercando nuestras educativas de manera online con la
 						presencia y acompañamiento de nuestros tutores
 					</p>
+
 					<div class="hero--section--info--action">
 						<a class="hero--section--info--action--link" href="#"
 							>Cursos</a
@@ -99,54 +112,57 @@
 
 			<!-- MISION -->
 			<section class="mision--section">
-				<h2 class="mision--section--title">
-					<div class="mision--section--title--bg"></div>
-					<span class="mision--section--title--span">M</span>isión
-				</h2>
-				<p class="mision--section--text">
-					Entendemos los desafíos que enfrentas en la necesidad de
-					sumar capacitaciones pudiendo manejar horarios y tiempos,
-					pero no te preocupes, estamos aquí para ayudarte. Nuestro
-					enfoque se basa bajo la modalidad online donde vas a
-					encontrar una manera practica y sencilla de completar las
-					capacitaciones para la recepción de las certificaciones
-					correspondientes.
-				</p>
+				<div>
+					<h2 class="mision--section--title">
+						<div class="mision--section--title--bg"></div>
+						Misión
+					</h2>
+					<p class="mision--section--text">
+						Entendemos los desafíos que enfrentas en la necesidad de
+						<span class="mision--section--text--span">
+							sumar capacitaciones
+						</span>
+						pudiendo manejar horarios y tiempos, pero no te
+						preocupes, estamos aquí para ayudarte. Nuestro enfoque
+						se basa bajo la modalidad
+						<span class="mision--section--text--span">
+							online
+						</span>
+						donde vas a encontrar una manera practica y sencilla de
+						completar las capacitaciones para la recepción de las
+						certificaciones correspondientes.
+					</p>
+					<p class="mision--section--text">
+						Estos certificados te permiten
+						<span class="mision--section--text--span">
+							acreditar puntaje
+						</span>
+						en las disntintas areas como asi tambien el tramo
+						pedagogico a profesionales que quieran incursionar en
+						docencia. ¡Convierte tus objetivos en realidad hoy
+						mismo!<span class="mision--section--text--link">
+							Contáctanos
+						</span>
+						si deseas obtener más información.
+					</p>
+				</div>
+				<img
+					class="mision--section--image"
+					src="./img/assets/certificate.svg" />
 			</section>
 			<!-- END MISION -->
 
-			<section class="services--section">
+			<!-- SERVICES -->
+			<main class="services--section">
 				<h1 class="services--section--title">
-					<div class="services--section--title--bg"></div>
-					<span class="services--section--title--span">C</span
-					>apacitaciones para docentes
+					Capacitaciones para docentes
 				</h1>
-				DIPLOMATURAS
+
+				<h2 class="services--section--subtitle">DIPLOMATURAS</h2>
 				<div class="services--section--container">
-					<!-- <div class="services--section--card">
-						<img
-							data-src="./img/cursos/diplomaturas/1.jpeg"
-							class="services--section--card--image lazy"
-							src=""
-							alt="image" />
-					</div> -->
 					<div class="services--section--card">
 						<img
 							data-src="./img/cursos/diplomaturas/2.jpeg"
-							class="services--section--card--image lazy"
-							src=""
-							alt="image" />
-					</div>
-					<div class="services--section--card">
-						<img
-							data-src="./img/cursos/diplomaturas/3.jpeg"
-							class="services--section--card--image lazy"
-							src=""
-							alt="image" />
-					</div>
-					<div class="services--section--card">
-						<img
-							data-src="./img/cursos/diplomaturas/4.jpeg"
 							class="services--section--card--image lazy"
 							src=""
 							alt="image" />
@@ -160,13 +176,37 @@
 					</div>
 					<div class="services--section--card">
 						<img
+							data-src="./img/cursos/diplomaturas/4.jpeg"
+							class="services--section--card--image lazy"
+							src=""
+							alt="image" />
+					</div>
+					<div class="services--section--card">
+						<img
+							data-src="./img/cursos/diplomaturas/3.jpeg"
+							class="services--section--card--image lazy"
+							src=""
+							alt="image" />
+					</div>
+					<div class="services--section--card">
+						<img
 							data-src="./img/cursos/diplomaturas/6.jpeg"
 							class="services--section--card--image lazy"
 							src=""
 							alt="image" />
 					</div>
+					<div class="services--section--card--special">
+						<img
+							data-src="./img/cursos/diplomaturas/1.jpeg"
+							class="services--section--card--image--special lazy"
+							src=""
+							alt="image" />
+					</div>
 				</div>
-				ACTUALIZACIÓNES ACADÉMICAS
+
+				<h2 class="services--section--subtitle">
+					ACTUALIZACIÓNES ACADÉMICAS
+				</h2>
 				<div class="services--section--container">
 					<div class="services--section--card">
 						<img
@@ -191,11 +231,13 @@
 					</div>
 				</div>
 
-				ESPECIALIZACIONES DOCENTES DE NIVEL SUPERIOR
+				<h2 class="services--section--subtitle">
+					ESPECIALIZACIONES DOCENTES DE NIVEL SUPERIOR
+				</h2>
 				<div class="services--section--container">
 					<div class="services--section--card">
 						<img
-							data-src="./img/cursos/especializaciones/2.jpeg"
+							data-src="./img/cursos/especializaciones/4.jpeg"
 							class="services--section--card--image lazy"
 							src=""
 							alt="image" />
@@ -209,30 +251,96 @@
 					</div>
 					<div class="services--section--card">
 						<img
-							data-src="./img/cursos/especializaciones/4.jpeg"
+							data-src="./img/cursos/especializaciones/2.jpeg"
 							class="services--section--card--image lazy"
 							src=""
 							alt="image" />
 					</div>
 				</div>
-			</section>
 
-			<section class="app--section">
-				<h3 id="titulo">TITULO</h3>
-			</section>
-			<section class="app--section"></section>
-			<footer id="contact" class="app--footer">
-				<div class="app--footer--info--container">
-					<div>+542911111111</div>
-					<div>+5429155222333</div>
+				<h2 class="services--section--subtitle">
+					Tramo Pedagógico de Nivel Medio y SUPERIOR
+				</h2>
+
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img
+								src="./img/formacion/1.jpeg"
+								alt="pedagogico" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./img/formacion/2.jpeg"
+								alt="pedagogico" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./img/formacion/3.jpeg"
+								alt="pedagogico" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./img/formacion/4.jpeg"
+								alt="pedagogico" />
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
 				</div>
-				<div class="app--footer--info--container">
-					<div>email@email.com</div>
-					<div>email@email.com2</div>
+			</main>
+			<!-- END SERVICES -->
+
+			<footer id="contact" class="footer">
+				<div class="footer--info--container">
+					<p class="footer--info--text">
+						Contáctanos a través de WhatsApp, correo electrónico o
+						cualquier otra vía que prefieras.
+					</p>
+					<img
+						class="footer--info--logo"
+						src="./img/gea/logo.jpg"
+						alt="logo" />
+				</div>
+				<div class="footer--info--container">
+					<div class="footer--info--contact">
+						<img
+							class="footer--info--contact--icon"
+							src="./img/assets/wtsp.svg"
+							alt="whatsapp" />
+						<p class="footer--info--contact--text">+542911111111</p>
+					</div>
+					<div class="footer--info--contact">
+						<img
+							class="footer--info--contact--icon"
+							src="./img/assets/wtsp.svg"
+							alt="whatsapp" />
+						<p class="footer--info--contact--text">+542911111111</p>
+					</div>
+					<div class="footer--info--contact">
+						<img
+							class="footer--info--contact--icon"
+							src="./img/assets/email.svg"
+							alt="email" />
+						<p class="footer--info--contact--text">
+							email@email.com2
+						</p>
+					</div>
+					<div class="footer--info--contact">
+						<img
+							class="footer--info--contact--icon"
+							src="./img/assets/email.svg"
+							alt="email" />
+						<p class="footer--info--contact--text">
+							email@email.com2
+						</p>
+					</div>
 				</div>
 			</footer>
 		</div>
 
 		<script src="script.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	</body>
 </html>

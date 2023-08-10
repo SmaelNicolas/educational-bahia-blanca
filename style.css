@@ -11,6 +11,7 @@ xxl: 1400px;
 @import url("./styles/hero.css");
 @import url("./styles/mision.css");
 @import url("./styles/services.css");
+@import url("./styles/swiper.css");
 @import url("./styles/footer.css");
 
 * {
@@ -24,7 +25,7 @@ xxl: 1400px;
 }
 
 .app--container {
-	max-width: 1600px;
+	max-width: 1500px;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -42,6 +43,7 @@ xxl: 1400px;
 	display: flex;
 }
 
-.lazy {
+.lazy,
+.lazyLogo {
 	opacity: 0;
 }

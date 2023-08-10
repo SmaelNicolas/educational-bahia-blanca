@@ -7,7 +7,9 @@
 	align-items: center;
 	gap: 50px;
 }
+
 .hero--section--info {
+	width: 100%;
 	max-width: 450px;
 	padding: 20px;
 	display: flex;
@@ -15,6 +17,10 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 10px 0px;
+}
+.hero--section--logo {
+	max-width: 280px;
+	margin-top: 20px;
 }
 .hero--section--info--title {
 	font-size: 4rem;
@@ -69,8 +75,12 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: flex-start;
-		padding: 0px 10rem;
+		padding: 0px 5rem;
 		padding-top: 10%;
+		gap: 0px;
+	}
+	.hero--section--logo {
+		margin-bottom: 20px;
 	}
 	.hero--section--info {
 		max-width: 650px;

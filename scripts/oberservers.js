@@ -4,7 +4,6 @@ const options = {
 	rootMargin: "0px 0px 0px 0px",
 };
 export const observersElements = () => {
-	const title = document.querySelector("#titulo");
 	const imagesLazy = document.querySelectorAll(".lazy");
 
 	const addUrl = (entries, obs) => {
@@ -17,21 +16,30 @@ export const observersElements = () => {
 		});
 	};
 
-	const callMe = (entries) => {
-		let entry = entries[0];
-		if (entry.isIntersecting) {
-			entry.target.classList.add("active");
-		} else {
-			// entry.target.classList.remove("active");
-		}
-	};
-
-	let observer = new IntersectionObserver(callMe, options);
 	let observerImages = new IntersectionObserver(addUrl, options);
-
-	observer.observe(title);
 
 	imagesLazy.forEach((image) => {
 		observerImages.observe(image);
 	});
+
+	const logoImages = document.querySelector("#logo");
+	const logoHeader = document.querySelector(".header--image");
+	const logoHeaderMobile = document.querySelector(
+		".header--mobile--nav--image"
+	);
+
+	const changePosition = (entries, obs) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				logoHeader.classList.add("lazyLogo");
+				logoHeaderMobile.classList.add("lazyLogo");
+			} else {
+				logoHeader.classList.remove("lazyLogo");
+				logoHeaderMobile.classList.remove("lazyLogo");
+			}
+		});
+	};
+
+	let oberverLogo = new IntersectionObserver(changePosition, options);
+	oberverLogo.observe(logoImages);
 };

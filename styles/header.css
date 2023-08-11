@@ -65,6 +65,17 @@
 	transform-origin: bottom left;
 }
 
+/* activate link */
+.header--navigation--li--active {
+	transition: all 0.3s linear ease-in-out;
+	background: rgba(167, 193, 246, 0.19);
+}
+.header--navigation--li--active.header--navigation--li
+	.hover-underline-animation:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
 /* MOBILE HEADER */
 .header--mobile {
 	width: 100%;

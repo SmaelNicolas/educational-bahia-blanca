@@ -1,0 +1,77 @@
+.faqs {
+	width: 100%;
+	min-height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-bottom: 50px;
+	background: white;
+}
+
+.faqs--title {
+	width: 100%;
+	z-index: 3;
+	position: relative;
+	color: #250e7e;
+	font-size: 40px;
+	text-align: start;
+	margin-top: 50px;
+	font-weight: 500;
+}
+
+.faqs--description {
+	font-size: 14px;
+	margin: 20px 0px;
+}
+
+.faqs--container {
+	width: 100%;
+	background-color: #250e7e;
+	color: #fff;
+	font-size: 1rem;
+	margin: 10px 0px;
+}
+
+.faqs--faq {
+	padding: 0.5em 1.3rem;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #aaa;
+	transition: all 0.3s ease;
+}
+
+.faqs--answer {
+	background: #6169d9;
+	padding: 0.5em 1em;
+	transition: all 0.3s ease;
+}
+
+.faqs--faq::-webkit-details-marker {
+	display: none;
+	transition: all 0.3s ease;
+}
+
+.faqs--faq:after {
+	content: "\002B";
+	transition: all 0.3s ease;
+}
+
+.faqs--container[open] .faqs--faq:after {
+	content: "\00D7";
+	transition: all 0.3s ease;
+}
+
+@media (min-width: 750px) {
+	.faqs--container {
+		font-size: 1.5rem;
+	}
+	.faqs--title {
+		font-size: 80px;
+	}
+	.faqs--description {
+		font-size: 16px;
+		margin: 20px 0px;
+	}
+}

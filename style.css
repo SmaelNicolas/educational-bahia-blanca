@@ -44,6 +44,10 @@ xxl: 1400px;
 	display: flex;
 }
 
+.opacity-0 {
+	opacity: 0;
+}
+
 .lazy,
 .lazyLogo {
 	opacity: 0;

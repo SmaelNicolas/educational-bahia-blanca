@@ -2,7 +2,7 @@
 	max-width: 280px;
 	height: 100%;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-bottom: 60px;
 }
 
 .swiper-slide {
@@ -14,10 +14,11 @@
 	align-items: center;
 }
 
-.swiper-slide img {
-	display: block;
+.swiper-slide-image {
 	width: 100%;
-	object-fit: cover;
+	min-height: 300px;
+	display: block;
+	object-fit: contain;
 	cursor: grab;
 }
 
@@ -34,7 +35,7 @@
 	.swiper {
 		max-width: 500px;
 	}
-	.swiper-slide img {
+	.swiper-slide-image {
 		max-width: 450px;
 	}
 }

@@ -38,6 +38,7 @@
 .footer--info--contact--text {
 	font-size: 14px;
 	color: white;
+	cursor: pointer;
 }
 .footer--info--logo {
 	display: none;

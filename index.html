@@ -115,7 +115,8 @@
 			<section class="mision--section">
 				<div>
 					<h2 class="mision--section--title">
-						<div class="mision--section--title--bg"></div>
+						<div
+							class="appear mision--section--title--bg opacity-0"></div>
 						Misión
 					</h2>
 					<p class="mision--section--text">
@@ -152,7 +153,7 @@
 					</p>
 				</div>
 				<img
-					class="mision--section--image"
+					class="appear mision--section--image opacity-0"
 					src="./img/assets/certificate.svg" />
 			</section>
 			<!-- END MISION -->
@@ -315,27 +316,65 @@
 				<h2 class="services--section--subtitle">
 					Tramo Pedagógico de Nivel Medio y SUPERIOR
 				</h2>
+				<div class="services--section--container">
+					<div class="services--section--card">
+						<img
+							data-src="./img/formacion/1.jpeg"
+							class="services--section--card--image lazy"
+							src=""
+							alt="image" />
+					</div>
+					<div class="services--section--card">
+						<img
+							data-src="./img/formacion/2.jpeg"
+							class="services--section--card--image lazy"
+							src=""
+							alt="image" />
+					</div>
+					<div class="services--section--card">
+						<img
+							data-src="./img/formacion/4.jpeg"
+							class="services--section--card--image lazy"
+							src=""
+							alt="image" />
+					</div>
+					<div class="services--section--card">
+						<img
+							data-src="./img/formacion/3.jpeg"
+							class="services--section--card--image lazy"
+							src=""
+							alt="image" />
+					</div>
+				</div>
+				<!-- END PEDAGOGIAS -->
+
+				<!-- PEDAGOGIAS -->
+				<h2 class="services--section--subtitle--review">
+					Nada nos complace más que recibir comentarios positivos de
+					nuestros clientes satisfechos.
+				</h2>
 
 				<div class="swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<img
-								src="./img/formacion/1.jpeg"
+								class="lazy swiper-slide-image"
+								data-src="./img/reviews/review_1.webp"
+								src=""
 								alt="pedagogico" />
 						</div>
 						<div class="swiper-slide">
 							<img
-								src="./img/formacion/2.jpeg"
+								class="lazy swiper-slide-image"
+								data-src="./img/reviews/review_2.png"
+								src=""
 								alt="pedagogico" />
 						</div>
 						<div class="swiper-slide">
 							<img
-								src="./img/formacion/3.jpeg"
-								alt="pedagogico" />
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="./img/formacion/4.jpeg"
+								class="lazy swiper-slide-image"
+								data-src="./img/reviews/review_3.webp"
+								src=""
 								alt="pedagogico" />
 						</div>
 					</div>
@@ -409,14 +448,22 @@
 							class="footer--info--contact--icon"
 							src="./img/assets/wtsp.svg"
 							alt="whatsapp" />
-						<p class="footer--info--contact--text">+542911111111</p>
+						<p
+							data-link="https://api.whatsapp.com/send?phone=542911111111"
+							class="open--link footer--info--contact--text">
+							+542911111111
+						</p>
 					</div>
 					<div class="footer--info--contact">
 						<img
 							class="footer--info--contact--icon"
 							src="./img/assets/wtsp.svg"
 							alt="whatsapp" />
-						<p class="footer--info--contact--text">+542911111111</p>
+						<p
+							data-link="https://api.whatsapp.com/send?phone=542911111111"
+							class="open--link footer--info--contact--text">
+							+542911111111
+						</p>
 					</div>
 					<div class="footer--info--contact">
 						<img

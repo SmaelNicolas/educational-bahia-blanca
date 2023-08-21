@@ -39,13 +39,13 @@
 	color: #250e7e;
 	font-size: 25px;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: start;
 	margin: 0 auto;
 	margin-top: 100px;
 }
 
 .services--section--container {
-	width: 80%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -70,6 +70,7 @@
 	background-position: top;
 	background-repeat: repeat-y;
 	transition: all 0.3s ease-in-out;
+	margin: 0 auto;
 }
 .services--section--card:hover,
 .services--section--card--special:hover {
@@ -105,6 +106,7 @@
 	background-position: top;
 	background-repeat: repeat-y;
 	transition: all 0.3s ease-in-out;
+	margin: 0 auto;
 }
 
 .services--section--card--image {
@@ -124,6 +126,7 @@
 	}
 	.services--section--subtitle--review {
 		width: 550px;
+		text-align: center;
 	}
 	.services--section--card {
 		width: 450px;

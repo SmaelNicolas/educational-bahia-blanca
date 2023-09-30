@@ -5,13 +5,18 @@
 	margin-bottom: 60px;
 }
 
+.swiper-reviews {
+	min-height: 280px;
+}
+
 .swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
+	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
 }
 
 .swiper-slide-image {

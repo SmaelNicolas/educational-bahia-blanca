@@ -15,6 +15,33 @@
 .header--image {
 	height: 80px;
 }
+
+.header--icons--container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.header--icons--image--container {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header--icons--image--wts {
+	width: 100%;
+}
+.header--icons--image--ig {
+	width: 90%;
+}
+.header--icons--image--fb {
+	width: 80%;
+}
+
 .header--navigation {
 	display: flex;
 	flex-direction: row;
@@ -211,13 +238,13 @@
 	cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
 	.header {
 		display: none;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 	.header--mobile {
 		display: none;
 	}

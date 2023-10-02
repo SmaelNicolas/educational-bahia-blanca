@@ -14,6 +14,7 @@ xxl: 1400px;
 @import url("./styles/benefits.css");
 @import url("./styles/swiper.css");
 @import url("./styles/footer.css");
+@import url("./styles/whatsappButton.css");
 
 * {
 	padding: 0;

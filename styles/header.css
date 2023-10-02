@@ -34,12 +34,15 @@
 
 .header--icons--image--wts {
 	width: 100%;
+	cursor: pointer;
 }
 .header--icons--image--ig {
 	width: 90%;
+	cursor: pointer;
 }
 .header--icons--image--fb {
 	width: 80%;
+	cursor: pointer;
 }
 
 .header--navigation {
